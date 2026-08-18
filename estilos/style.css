@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 :root {
@@ -350,7 +349,7 @@ body {
   }
 
   #main .caixa {
-    width: 75%;
+    width: 50%;
     height: auto;
     min-height: 100%;
     padding: 20px;
