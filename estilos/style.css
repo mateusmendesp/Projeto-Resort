@@ -38,9 +38,8 @@ body {
     minmax(420px, auto)
     minmax(400px, auto)
     minmax(400px, auto)
-    auto
-    auto
-    80px;
+    minmax(270px, auto)
+    55px;
 }
 
 #header {
@@ -208,7 +207,7 @@ body {
 }
 .planos:hover{
   transform: translateY(-7px);
-  box-shadow: 0 10px 30px rgba(221, 213, 213, 0.301);
+  box-shadow: 0 10px 30px rgba(221, 213, 213, 0.403);
 }
 
 .planos h3{
@@ -251,10 +250,55 @@ body {
   text-decoration: none;
   background-color: var(--areia);
     transition: all 0.25s ease;
+    margin-bottom: 5px;
 }
 
 .planos a:hover {
   background-color: transparent;
   color: var(--dourado);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
+#contato{
+  display: flex;
+  flex-direction: column;
+  grid-area: 6 / 1 / 7 / -1;
+  background-color: var(--azul-oceano);
+  padding: 15px;
+  padding-left: 20px;
+}
+#contato h2{
+  color: var(--dourado);
+  font-size: 1.6em;
+}
+#contato h4{
+  color: var(--dourado);
+  font-size: 1.1em;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+#contato p{
+  text-indent: 15px;
+  color: var(--branco-quente);
+}
+#footer{
+  background-color: var(--areia);
+  grid-area: -2 / 1 / -1 /-1;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    flex-wrap: wrap ;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  @media (max-width: 850px){
+  #main .caixa{
+      width: 40%;
+    }
+  }
+  @media (max-width: 650px){
+  #main .caixa{
+      width: 50%;
+    }
+  }
