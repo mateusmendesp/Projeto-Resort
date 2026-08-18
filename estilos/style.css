@@ -145,6 +145,7 @@ body {
   border-radius: 8px;
   text-decoration: none;
   background-color: var(--azul-oceano);
+  transition: 0.3s all;
 }
 
 #main a:hover {
