@@ -305,13 +305,81 @@ body {
     font-weight: 600;
   }
 
-  @media (max-width: 850px){
-  #main .caixa{
-      width: 40%;
-    }
+ @media (max-width: 650px) {
+
+  #container {
+    grid-template-rows:
+      100px
+      auto
+      minmax(450px, auto)
+      auto
+      auto
+      auto
+      70px;
   }
-  @media (max-width: 650px){
-  #main .caixa{
-      width: 50%;
-    }
+
+  #header {
+    height: 100px;
   }
+
+  #header img {
+    max-width: 90%;
+    max-height: 100px;
+    object-fit: contain;
+  }
+
+  #menu {
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  #menu ul {
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  #menu li {
+    font-size: 0.85em;
+    padding: 6px;
+  }
+
+  #main {
+    min-height: 450px;
+  }
+
+  #main .caixa {
+    width: 75%;
+    height: auto;
+    min-height: 100%;
+    padding: 20px;
+  }
+
+  #main h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+
+  #acomodacoes {
+    padding: 15px;
+  }
+
+  .acomod {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .planos {
+    width: 100%;
+  }
+
+  #sobre {
+    padding: 15px;
+  }
+
+  #contato {
+    padding: 15px;
+  }
+}
